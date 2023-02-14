@@ -1,0 +1,148 @@
+* {
+    border: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --white: #ffffff;
+    --lightbrown: #fae4cc;
+    --orange: #e89137;
+    --darkbrown: #2d0706;
+    --red: #c52905;
+}
+
+body {
+    overflow-x: hidden;
+    background-color: var(--brown-color);
+    max-width: 100%;
+}
+
+html {
+    scroll-behavior: smooth;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+
+
+/* -- Fonts -- */
+
+
+
+h1 {
+    font-family: 'Handlee', cursive;
+    font-size: 3.5rem;
+    color: var(--darkbrown);
+}
+
+p {
+    font-family: Helvetica, sans-serif;
+    color: var(--darkbrown);
+}
+
+a {
+    font-family: Helvetica, sans-serif;
+    text-decoration: none;
+    color: var(--lightbrown);
+}
+
+
+
+/* -- Buttons -- */
+
+
+
+.button-main {
+    background-color: var(--lightbrown);
+    padding: 0.75rem 1rem;
+    border: var(--lightbrown) solid 2px;
+    mix-blend-mode: multiply;
+}
+
+.button-main:hover {
+    background-color: var(--lightbrown);
+}
+
+
+/* -- Landing -- */
+
+
+
+#landing {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: rgba(252, 230, 209, 0.65);
+}
+
+#landing .landing-video {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    z-index: -1;
+    object-fit: cover;
+}
+
+#landing .landing-content {
+    text-align: center;
+}
+
+#landing .landing-content p {
+    display: inline-block;
+    margin-top: 0.5rem;
+    font-style: italic;
+    font-size: 1.2rem;
+
+    border-right: var(--red) solid 2px;
+    padding: 0.2rem 1.5rem;
+}
+
+#landing .landing-content p:nth-child(4) {
+    border-right: none;
+}
+
+#landing .landing-content div {
+    margin-top: 4rem;
+}
+
+
+#landing p.footer-text {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    margin: 1rem;
+    font-style: italic;
+}
+
+#landing a {}
+
+
+
+/* -- Two -- */
+
+
+
+#two {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: rgba(252, 230, 209, 1);
+}
